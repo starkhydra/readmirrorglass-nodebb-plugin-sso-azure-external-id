@@ -1,0 +1,8 @@
+# Dev / test artefacts — not needed by npm consumers
+.eslintrc*
+.eslintignore
+*.test.js
+*.spec.js
+test/
+tests/
+.github/

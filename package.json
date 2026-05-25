@@ -1,0 +1,55 @@
+{
+  "name": "nodebb-plugin-sso-azure-external-id",
+  "version": "1.0.0",
+  "description": "Azure Entra External ID (CIAM) SSO for NodeBB — Authorization Code + PKCE, stable oid-based user mapping, admin-panel configuration",
+  "main": "library.js",
+  "license": "MIT",
+  "author": "MirrorGlass (contributors welcome)",
+  "homepage": "https://github.com/readmirrorglass/nodebb-plugin-sso-azure-external-id",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/readmirrorglass/nodebb-plugin-sso-azure-external-id.git"
+  },
+  "bugs": {
+    "url": "https://github.com/readmirrorglass/nodebb-plugin-sso-azure-external-id/issues"
+  },
+  "nbbpm": {
+    "compatibility": "^3.0.0 || ^4.0.0",
+    "parsed": true
+  },
+  "library": "./library.js",
+  "hooks": [
+    {
+      "hook": "static:app.load",
+      "method": "init"
+    },
+    {
+      "hook": "filter:login.build",
+      "method": "addLoginButton"
+    },
+    {
+      "hook": "filter:admin.header.build",
+      "method": "addAdminNavigation"
+    }
+  ],
+  "scripts": {
+    "lint": "eslint library.js"
+  },
+  "keywords": [
+    "nodebb",
+    "nodebb-plugin",
+    "sso",
+    "azure",
+    "entra",
+    "ciam",
+    "oidc",
+    "external-id",
+    "microsoft"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^2.16.0"
+  }
+}
