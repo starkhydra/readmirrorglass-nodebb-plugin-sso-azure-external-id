@@ -194,6 +194,10 @@ The user's session expired between starting the OAuth flow and returning from En
 
 PRs and issues welcome. The plugin targets NodeBB v3.x and v4.x. When testing locally, point `AZURE_ENTRA_AUTHORITY` etc. at a development tenant.
 
+## Support
+
+We built this plugin because we needed it, and we're sharing it in that spirit. If something's broken, PRs are welcome. If you need hands-on help integrating it into your setup — configuration, customisation, or anything else — that's consulting work and we charge an hourly rate. Reach out via the repository if you'd like a quote.
+
 ---
 
 ## License
