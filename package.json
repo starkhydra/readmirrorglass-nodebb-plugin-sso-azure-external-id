@@ -4,7 +4,7 @@
   "description": "Azure Entra External ID (CIAM) SSO for NodeBB — Authorization Code + PKCE, stable oid-based user mapping, admin-panel configuration",
   "main": "library.js",
   "license": "MIT",
-  "author": "MirrorGlass (contributors welcome)",
+  "author": "ReadMirrorGlass",
   "homepage": "https://github.com/readmirrorglass/nodebb-plugin-sso-azure-external-id",
   "repository": {
     "type": "git",
